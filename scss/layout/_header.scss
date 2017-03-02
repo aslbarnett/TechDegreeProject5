@@ -1,0 +1,52 @@
+.main-header {
+  @extend %centred-text;
+  background: $colour-header;
+  padding: 1em 0;
+
+  ul li {
+    @media #{$break-narrow} {
+      background: none;
+      margin: 0;
+      display: inline-block;
+    }
+  }
+
+  p {
+    @media #{$break-narrow} {
+      text-align: left;
+      margin-right: 40px;
+    }
+  }
+}
+
+.container {
+  @extend %width90;
+  margin: 0 auto;
+}
+
+.main-nav {
+  li {
+    @extend %centred-text;
+    background: $colour-nav-items;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  a {
+    @include text(0.9em, $font-weight: bold, $color: $colour-nav-link);
+    padding: 10px 15px;
+    display: block;
+  }
+
+  a:hover {
+    @include text($color: $colour-nav-link-hover);
+  }
+}
+
+.nav-header-container {
+  @media #{$break-wide} {
+    display: flex;
+    flex-direction: row;
+  }
+}
+

@@ -1,0 +1,32 @@
+
+// Descriptive colour variables
+
+$doveGray: #696969;
+$tundora: #454545;
+$geebung: #CD9B1D;
+$gray: #888888;
+$silver: #ccc;
+$lightning-yellow: #FFC125;
+$alabaster: #F7F7F7;
+$white: #fff;
+
+// Functional colour variables
+
+$colour-main: $doveGray;
+$colour-link-default: $doveGray;
+$colour-head2: $tundora;
+$colour-head3: $geebung;
+$colour-box-shadow: $gray;
+$colour-border: $silver;
+$colour-logo-name: $tundora;
+$colour-secondary-link-hover: $lightning-yellow;
+$colour-footer: $alabaster;
+$colour-header: $alabaster;
+$colour-nav-items: $white;
+$colour-nav-link-hover: $lightning-yellow;
+$colour-nav-link: $tundora;
+
+// Media query breakpoints
+
+$break-narrow: '(min-width: 768px)';
+$break-wide: '(min-width: 1024px)';

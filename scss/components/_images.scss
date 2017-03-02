@@ -1,0 +1,22 @@
+.profile-pic {
+  max-width: 60%;
+  margin-top: 40px;
+
+  @media #{$break-narrow} {
+    margin: 0;
+  }
+}
+
+img {
+  border: 5px solid $colour-border;
+  border-radius: 5px;
+  transition: all .5s;
+  transition-timing-function: linear;
+  box-shadow: 3px 3px 5px $colour-box-shadow;
+
+  &:hover {
+    transform: scale(1.2) rotate(20deg);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}

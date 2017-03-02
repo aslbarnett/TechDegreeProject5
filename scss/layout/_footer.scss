@@ -1,0 +1,68 @@
+.main-footer {
+  @extend %centred-text;
+  padding: 2em 0;
+  background: $colour-footer;
+
+  p {
+    @extend %width90;
+    margin: 0 auto 30px;
+  }
+
+  ul {
+    margin-bottom: 60px;
+  }
+}
+
+.bottom-main-nav {
+  display: none;
+
+  @media #{$break-narrow} {
+    display: initial;
+    width: 60%;
+    text-align: right;
+  }
+
+  li {
+    @media #{$break-narrow} {
+      @include text(0.8em);
+      display: inline-block;
+    }
+  }
+
+  li a:hover {
+    @media #{$break-narrow} {
+      @include text($color: $colour-nav-link-hover);
+    }
+  }
+}
+
+.bottom-nav {
+  padding-top: 20px;
+  border-top: 1px solid $colour-border;
+  display: flex;
+  justify-content: space-around;
+}
+
+#student-name {
+  @include text(0.8em, $font-weight: bold);
+  text-align: left;
+}
+
+#back-to-top {
+  @include text(0.8em, $font-weight: bold);
+  text-align: right;
+
+  @media #{$break-narrow} {
+    display: none;
+  }
+}
+
+.main-footer ul li {
+  @include text($font-weight: 300);
+
+  a {
+    @include text($font-weight: bold);
+    margin-left: 15px;
+  }
+}
+

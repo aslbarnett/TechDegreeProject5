@@ -1,0 +1,8 @@
+.name {
+  @include text(1.5em, $color: $colour-logo-name);
+
+  a {
+    padding: 10px 15px;
+    display: block;
+  }
+}
